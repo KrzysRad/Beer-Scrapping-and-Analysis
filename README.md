@@ -1,20 +1,20 @@
 # Beer-Scrapping-and-Analysis
 An end-to-end data science project focused on scraping, processing, and analyzing market data from BeerAdvocate (American IPAs). The project transitions from raw web automation to predictive machine learning models and implements a custom frequentist statistical ranking system.
 
-## 🚀 Project Overview
+## Project Overview
 * **Data Collection:** Automated dynamic web scraping of ~4,950 beer products using **Playwright** and **BeautifulSoup**.
 * **Data Engineering:** Extracted numerical metrics from unstructured text (ABV, ratings, dates) and engineered new behavioral features like the **"Hype Factor"**.
 * **Machine Learning:** Trained and optimized 7 regression models (including **LightGBM, XGBoost, and Random Forest**) using `GridSearchCV` to predict beer popularity/scores.
 * **Statistical Ranking:** Implemented a **Student's t-distribution lower confidence bound** algorithm to solve the "low-volume rating bias" and create a fair product leaderboard.
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Web Scraping:** Playwright, BeautifulSoup4
 * **Data Processing:** Pandas, NumPy
 * **Visualization:** Seaborn, Matplotlib
 * **Machine Learning:** Scikit-Learn, XGBoost, LightGBM
 * **Statistics:** SciPy (Stats module)
 
-## 📊 Key Highlights & Methodologies
+## Key Highlights & Methodologies
 
 ### 1. Robust Web Scraping
 To bypass modern bot-detection systems, the scraper utilizes Playwright in headless mode with `AutomationControlled` flags disabled, combined with randomized user behavior simulation. 
